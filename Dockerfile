@@ -41,7 +41,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 
 # Install the app dependencies
-RUN npm install
+RUN npm install express puppeteer
 
 # Copy the rest of the application code
 COPY . .
